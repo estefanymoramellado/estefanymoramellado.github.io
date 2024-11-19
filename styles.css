@@ -5,94 +5,159 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 3rem;
+    background: url('images/img1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    background-repeat: no-repeat;
 }
 
 nav {
-    background: #444;
+    font-style: normal;
     padding: 10px 0;
     text-align: center;
+    text-align: left;
+    float: left;
+    margin-left: 10em;
 }
 
-nav ul {
+header {
+    color: #1d1c1c;
+    margin-top: 5em;
+    margin-left: 5em;
+    padding: 20px 20px;
+}
+
+.titule {
+    color: rgb(12, 12, 12);
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    background-color: #d8d521;
+    border-radius: 0.02em;
+    display: inline-block;
+    padding: 0.2em;
+    transition: transform 0.3s ease-in-out, translate 0.4s ease-in-out; 
+}
+.titule:hover {
+    transform: scaleX(1.2);
+}
+.titule span {
+    display: inline-block; /* Permite animar individualmente */
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: scale(1); /* Estado inicial */
+}
+
+.titule span:hover {
+    color: #fcf8f8; /* Cambia el color al pasar el mouse */
+    transform: scale(1.5); /* Aumenta el tamaño de la letra */
+}
+
+
+header h1 {
+    font-size: 1em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 1em;
+    
+}
+.linea-vertical {
+    width: 0.3em;
+    height: 38em; 
+    background-color: #d8d521;
+    margin-left: 7em;
+    margin-top: -2em;
+}
+
+
+.description {
+    font-family: 'Malgun Gothic', sans-serif;
+    margin-left: 18em;
+    margin-right: 4em;
+    text-align: justify;
+    padding: 3em;
+    margin-top: -36em;
+}
+
+.scroll {
+    color: #f0f0f0;
+    font-size: 0.8em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 12em;
+    margin-top: 8em;
+}
+
+.container2 {
+    display: flex;
+    margin-top: 12em;
+}
+
+.circle {
+    width: 3em;           
+    height: 3em;      
+    background-color: #EFE24E;
+    border-radius: 50%; 
+    margin-left: 5.7em;
+}
+
+
+.projects {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3em;
+    margin-left: 0.3em;
+    list-style: none;
+   
+}
+
+.list {
+    display: block;
+    margin-right: 20px;
+    margin-top: 7em;
+    list-style: none;
+    margin-bottom: 5em;
+}
+
+li {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.8em;
+    color: white;
+    background-color: black;
+    border-radius: 1em;
+    padding: 1em;
+    margin-top: 1em;
+}
+.view-project {
+    display: inline-block;
+    margin-left: 8em;
+    color: #EFE24E;
+    font-family: 'Malgun Gothic', sans-serif;
+    font-weight: 530;
+}
+
+
+.container3 {
+    display: flex;
+}
+
+.skill {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.5em;
+    margin-left: 0.3em;
     list-style: none;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+.subskill {
+    font-family: 'Malgun Gothic', sans-serif;
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-section {
-    padding: 50px 0;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-#about img {
-    max-width: 200px;
-    border-radius: 50%;
-    margin-top: 20px;
-}
-
-.project {
-    margin-bottom: 30px;
-}
-
-.project h3 {
-    color: #333;
-    font-size: 1.5rem;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-}
-
-footer p {
-    font-size: 1rem;
-}
-
-ul {
-    list-style-type: none;
-}
-
-ul li {
-    margin: 10px 0;
-}
-
-ul li a {
-    color: #333;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-ul li a:hover {
-    text-decoration: underline;
+    padding: 1em;
+    margin-top: 1em;
 }
