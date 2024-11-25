@@ -1,20 +1,47 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Portafolio cargado con éxito.");
 });
-// Obtener el elemento de la línea vertical
-const lineaVertical = document.querySelector('.linea-vertical');
+document.addEventListener("DOMContentLoaded", () => {
+    const letters = document.querySelectorAll(".titule span");
+    letters.forEach((letter, index) => {
+        letter.style.animationDelay = `${index * 0.1}s`; // Retraso de 0.1s por letra
+    });
+});
 
-// Función para actualizar la altura de la línea según el scroll
-function actualizarAlturaLinea() {
-    const scrollY = window.scrollY; // Obtener el valor de desplazamiento vertical (scroll)
-    const maxHeight = 38; // La altura máxima que la línea puede alcanzar (en em o px)
+document.addEventListener("DOMContentLoaded", () => {
+    const arrowDown = document.querySelector(".arrow-down");
+    const targetSection = document.querySelector(".container2");
 
-    // La altura de la línea será proporcional al desplazamiento del scroll
-    const newHeight = Math.min(scrollY, maxHeight); // La altura no puede superar el valor máximo
+    arrowDown.addEventListener("click", () => {
+        targetSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start"      
+        });
+    });
+});
 
-    // Establecer la nueva altura de la línea
-    lineaVertical.style.height = `${newHeight}px`;
-}
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".fade-in");
+    elements.forEach((element, index) => {
+        element.style.animationDelay = `${index * 0.5}s`; // Retraso progresivo
+    });
+});
+const items = document.querySelectorAll('.project-item');
+const radius = 300; // Distancia en 3D entre los elementos
+const angleStep = 360 / items.length; // Ángulo entre cada elemento
 
-// Escuchar el evento de scroll
-window.addEventListener('scroll', actualizarAlturaLinea);
+// Posicionar los elementos en un círculo
+items.forEach((item, index) => {
+    const angle = angleStep * index;
+    item.style.transform = `rotateY(${angle}deg) translateZ(${radius}px)`;
+});
+
+// Detectar el elemento al que pasas el mouse
+items.forEach((item, index) => {
+    item.addEventListener('mouseenter', () => {
+        items.forEach((otherItem, otherIndex) => {
+            const newAngle = angleStep * (otherIndex - index); // Recalcula las posiciones
+            otherItem.style.transform = `rotateY(${newAngle}deg) translateZ(${radius}px)`;
+        });
+    });
+});

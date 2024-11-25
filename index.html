@@ -15,83 +15,148 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Fresca&family=Major+Mono+Display&display=swap"
         rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Fresca&family=Major+Mono+Display&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
 </head>
 
 <body>
-    <header>
+    <header class="fade-in">
         <div class="container1">
             <h1>
                 <> | ESTEFANY MORA
             </h1>
-            <p class="titule">
-                <span>F</span><span>r</span><span>o</span><span>n</span><span>t</span><span>-</span>
-                <span>E</span><span>n</span><span>d</span>
+            <p class="titule fade-in">
+                <span>F</span><span>r</span><span>o</span><span>n</span><span>t</span><span>-</span><span>E</span><span>n</span><span>d</span>
                 <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span>
             </p>
-
         </div>
     </header>
 
-    <nav>
+    <nav class="social-icons">
         <ul>
-
+            <li><a href="https://www.linkedin.com/in/estefany-mora-mellado-1237b8261" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/estefanymoramellado" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="mailto:estefanymora.dev@gmail.com"><i class="fas fa-envelope"></i></a></li>
         </ul>
     </nav>
 
 
-    <section id="about">
+    <section id="about" class="fade-in">
         <div class="linea-vertical"></div>
-        <p class="description">
-            ¡Hola! Soy desarrolladora web con una formación diversa y en constante evolución.<br>
+        <p class="description fade-in">
+            ¡Hola! Soy <strong>desarrolladora web</strong> con una formación diversa y en constante evolución.
             Mi camino comenzó en el ámbito de las terapias naturales, donde aprendí a
-            conocerme y a valorar el equilibrio en todos los aspectos de mi vida.<br> 
-            Esta base deintrospección y equilibrio me llevó a explorar nuevas áreas, siendo la tecnología
-            mi siguiente gran pasión.<br><br>
+            conocerme y a valorar el equilibrio en todos los aspectos de mi vida.<br>
+            Esta base de introspección y equilibrio me llevó a explorar nuevas áreas, siendo la <strong>tecnología</strong>
+            mi siguiente <strong>gran pasión</strong>.<br>
 
             Mi curiosidad y el deseo de expandir mis habilidades me han llevado a
-            especializarme tanto en front-end como en back-end, con un enfoque particular en<br>
-            Python, donde estoy perfeccionando mis conocimientos para crear soluciones robustas y eficientes.<br>
-            Además, mi enfoque autodidacta me ha permitido explorar campos como la fotografía, el diseño de vestuario y el dibujo, lo que me proporciona una visión<br>
-            estética y creativa única en cada proyecto que emprendo.
+            especializarme tanto en <strong>front-end</strong> como en <strong>back-end</strong>, con un enfoque particular en
+            <strong>Python</strong>, donde estoy perfeccionando mis conocimientos para crear soluciones robustas y eficientes.<br>
+            Además, mi enfoque autodidacta me ha permitido explorar campos como la fotografía, el diseño de vestuario y
+            el dibujo, lo que me proporciona una visión estética y creativa única en cada proyecto que emprendo.
         </p>
     </section>
 
-    <div class="arrow-down"></div>
-
-    <div class="container2">
-        <div class="circle"></div>
-        <p class="titule-projects">
-            <span>P</span><span>R</span><span>O</span><span>Y</span><span>E</span><span>C</span><span>T</span><span>O</span><span>S</span>
-        </p>
-        
+    <div id="linea-horizontal-wrapper">
+        <div class="linea-horizontal"></div>
     </div>
-    <div class="line-vertical"></div>
-  
-
-        <ul class="list">
-            <li class="project-item1">
-                <p class="project-title"><span>D</span><span>A</span><span>T</span><span>A</span><span>V</span><span>E</span><span>R</span><span>S</span><span>E</span>
-                    <span>C</span><span>H</span><span>A</span><span>T</span>
-                </span>
-            </li>
-
-
-            <li class="project-item2">
-                <span class="project-title">GUESS THE NUMBER</span>
-                <p class="view-project"><a href="https://www.ejemplo.com" target="_blank">ver proyecto</a></p>
-            </li>
-
-            <li class="project-item3">
-                <span class="project-title">FLEET MANAGER API</span>
-                <p class="view-project"><a href="https://www.ejemplo.com" target="_blank">ver proyecto</a></p>
-            </li>
-        </ul>
-
-
-
+    <div class="arrow-down"></div>
     
+    <div class="container2">
+        
+        <p class="titule-projects">
+            <span style="--delay: 1">P</span><span style="--delay: 2">R</span><span style="--delay: 3">O</span><span style="--delay: 4">Y</span><span style="--delay: 5">E</span><span style="--delay: 6">C</span><span style="--delay: 7">T</span><span style="--delay: 8">0</span><span style="--delay: 9">S</span>
+        </p>
+    </div>
 
+    <div class="container3">
+      <ul class="list">
+          <li class="project-item">
+            <img src="images/guess-the-number.png" alt="">
+              <div class="project-title">GUESS THE NUMBER</div>
+              <div class="description-project">Desarrollado con python, este juego demuestra cómo implementar lógica interactiva y validación en tiempo real. 
+                Una experiencia divertida para los amantes de los números.</div>
+              <div class="view-project"><a href="#">VER PROYECTO</a></div>
+          </li>
+          <li class="project-item">
+              <img src="" alt="">
+              <div class="project-title">FLEET MANAGER API</div>
+              <div class="description-project">Es una herramienta para gestionar y monitorear flotas de vehículos, ofreciendo seguimiento en tiempo real, gestión de mantenimiento y análisis de rendimiento, ideal para optimizar la logística y la eficiencia operativa.</div>
+              <div class="view-project"><a href="#">VER PROYECTO</a></div>
+          </li>
+          <li class="project-item">
+              <img src="" alt="">
+              <div class="project-title">DATAVERSE CHAT</div>
+              <div class="description-project">Description 3</div>
+              <div class="view-project"><a href="#">VER PROYECTO</a></div>
+          </li>
+      </ul>
+  </div>
+  <div class="container3">
+    <p class="titule-skills">SKILLS, herramientas y tecnologías que uso:</p>
+    <ul class="skills-list">
+        <li class="skill-item">
+            <img src="images/html.png" alt="HTML">
+            <p class="subtitule-skill">HTML</p>
+        </li>
+        <li class="skill-item">
+          <img src="images/css.png" alt="CSS">
+          <p class="subtitule-skill">CSS</p>
+      </li>
+      <li class="skill-item">
+        <img src="images/java-script.png" alt="JavaScript">
+        <p class="subtitule-skill">JavaScript</p>
+    </li>
+    <li class="skill-item">
+      <img src="images/python.png" alt="Python">
+      <p class="subtitule-skill">Python</p>
+  </li>
+        <li class="skill-item">
+            <img src="images/figma.png" alt="Figma">
+            <p class="subtitule-skill">Figma</p>
+        </li>
+        <li class="skill-item">
+            <img src="images/visual-code.png" alt="Visual Studio Code">
+            <p class="subtitule-skill">VS Code</p>
+        </li>
+        <li class="skill-item">
+            <img src="images/node-js.png" alt="Node.js">
+            <p class="subtitule-skill">Node.js</p>
+        </li>
+        <li class="skill-item">
+            <img src="images/pg-admin.png" alt="PgAdmin">
+            <p class="subtitule-skill">PgAdmin</p>
+        </li>
+        <li class="skill-item">
+            <img src="images/postman.png" alt="Postman">
+            <p class="subtitule-skill">Postman</p>
+        </li>
+        <li class="skill-item">
+          <img src="images/git.png" alt="Git">
+          <p class="subtitule-skill">Git</p>
+      </li>
+      <li class="skill-item">
+        <img src="images/command.png" alt="Command">
+        <p class="subtitule-skill">Command Line</p>
+    </li>
+        <li class="skill-item">
+            <img src="images/responsive-design.png" alt="Responsive Design">
+            <p class="subtitule-skill">Responsive</p>
+        </li>
+    </ul>
+</div>
 
+      
+    <footer>© 2024 Estefany Mora. Todos los derechos reservados.</footer>
+    
+    <script src="script.js"></script>
+</body>
 
+</html>
