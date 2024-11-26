@@ -176,7 +176,7 @@ header h1 {
     }
 
     100% {
-        width: 32.7em; 
+        width: 32.9em; 
     }
 }
 .arrow-down {
@@ -224,7 +224,7 @@ header h1 {
     font-weight: 400;
     font-style: normal;
     font-size: 1.8em;
-    margin-left: 22.1em;
+    margin-left: 45%;
     margin-top: 0.8em;
     padding: 0.4em;
     list-style: none;
