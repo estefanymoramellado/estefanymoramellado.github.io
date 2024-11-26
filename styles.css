@@ -647,7 +647,7 @@ header h1 {
         border-right: 22px solid transparent;
         border-top: 22px solid #0e0e0d;
    
-        top: 22%;
+      
         left: 47.2%;
         transform: translate(-50%, -50%);
  
@@ -1045,7 +1045,7 @@ header h1 {
         border-left: 18px solid transparent;
         border-right: 18px solid transparent;
         border-top: 18px solid #0e0e0d;
-        top: 17%;
+      
         left: 47.2%;
         transform: translate(-50%, -50%);
         transition: transform 0.3s ease;
