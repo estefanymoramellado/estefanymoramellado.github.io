@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 const items = document.querySelectorAll('.project-item');
-const radius = 300; // Distancia en 3D entre los elementos
+const radius = 250; // Distancia en 3D entre los elementos
 const angleStep = 360 / items.length; // Ángulo entre cada elemento
 
 // Posicionar los elementos en un círculo
