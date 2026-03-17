@@ -4,42 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Estefany Moramellado">
-    <title>Portafolio de Estefany</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="author" content="Estefany Mora Mellado">
+    <title>Estefany Mora — Developer · QA · Product</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fresca&family=Major+Mono+Display&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Fresca&family=Major+Mono+Display&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Fresca&family=Major+Mono+Display&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
-
-    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header class="fade-in">
-            <h1>
-                <> | ESTEFANY MORA
-            </h1>
-            <p class="titule fade-in">
-                <span>F</span><span>r</span><span>o</span><span>n</span><span>t</span><span>-</span><span>E</span><span>n</span><span>d</span>
-                <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span>
-            </p>
-    </header>
 
-    <nav class="social-icons">
-        <ul class="icons">
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <nav>
+        <a href="#hero" class="nav-logo">EM</a>
+        <ul class="nav-links">
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <ul class="nav-social">
             <li><a href="https://www.linkedin.com/in/estefany-mora-mellado-1237b8261" target="_blank"><i
                         class="fab fa-linkedin"></i></a></li>
             <li><a href="https://github.com/estefanymoramellado" target="_blank"><i class="fab fa-github"></i></a></li>
@@ -47,129 +41,372 @@
         </ul>
     </nav>
 
-
-    <section id="about" class="fade-in">
-        <div class="linea-vertical"></div>
-        <p class="description fade-in">
-            ¡Hola! Soy <strong>desarrolladora web</strong> con una formación diversa y en constante evolución.
-            Mi camino comenzó en el ámbito de las terapias naturales, donde aprendí a
-            conocerme y a valorar el equilibrio en todos los aspectos de mi vida.<br>
-            Esta base de introspección y equilibrio me llevó a explorar nuevas áreas, siendo la
-            <strong>tecnología</strong>
-            mi siguiente <strong>gran pasión</strong>.<br>
-
-            Mi curiosidad y el deseo de expandir mis habilidades me han llevado a
-            especializarme tanto en <strong>front-end</strong> como en <strong>back-end</strong>, con un enfoque
-            particular en
-            <strong>Python</strong>, donde estoy perfeccionando mis conocimientos para crear soluciones robustas y
-            eficientes.<br>
-            Además, mi enfoque autodidacta me ha permitido explorar campos como la fotografía, el diseño de vestuario y
-            el dibujo, lo que me proporciona una visión estética y creativa única en cada proyecto que emprendo.
-        </p>
+    <section id="hero">
+        <div class="glow-purple" style="top: 10%; left: -100px;"></div>
+        <div class="glow-gold" style="bottom: 30%; right: 10%;"></div>
+        <p class="hero-tag">— Portafolio 2025</p>
+        <h1 class="hero-name">Estefany Mora</h1>
+        <div class="hero-roles">
+            <span class="role-pill">Front-End Developer</span>
+            <span class="role-pill">QA Functional Tester</span>
+            <span class="role-pill">UX & Product Focus</span>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
     </section>
 
-    <div id="linea-horizontal-wrapper">
-        <div class="linea-horizontal"></div>
-    </div>
-    <div class="arrow-down"></div>
+    <div class="divider"></div>
+    <section id="about">
+        <div class="about-left reveal">
+            <div class="section-label">Sobre mí</div>
+            <h2 class="about-title">Una mente <em>técnica</em><br>con alma <em>creativa ...</em></h2>
+            <div class="about-photo-placeholder">
+                <i class="fas fa-user"></i>
+                <p></p>
+            </div>
+        </div>
+        <div class="about-right reveal">
+            <p>Soy Estefany, <span class="highlight">QA Functional Tester y developer</span> con una historia poco
+                convencional.
+                Antes de escribir mi primera línea de código, me formé como Terapeuta Natural, una experiencia que me
+                enseñó a observar cómo pequeños cambios pueden
+                <span class="highlight">transformar profundamente la experiencia de las personas.</span>
+            </p>
+            <br>
 
-    <div class="container2">
+            <p>La <span class="highlight">fotografía</span> reforzó esa forma de mirar el mundo: atención al detalle,
+                sensibilidad estética y curiosidad por comprender
+                los sistemas que nos rodean. Hoy aplico esa mirada en la <span class="highlight">tecnología</span> para
+                construir productos que combinan lógica, creatividad y sensibilidad.</p>
+            <br>
 
-        <p class="titule-project">
-            <span style="--delay: 1">P</span><span style="--delay: 2">R</span><span style="--delay: 3">O</span><span
-                style="--delay: 4">Y</span><span style="--delay: 5">E</span><span style="--delay: 6">C</span><span
-                style="--delay: 7">T</span><span style="--delay: 8">0</span><span style="--delay: 9">S</span>
-        </p>
-    </div>
+            <p>Actualmente me especializo en <span class="highlight">desarrollo web, testing y análisis de
+                    producto</span>, con foco en
+                <span class="highlight">front-end, Python, QA y APIs</span>, buscando crear herramientas que no solo
+                funcionen correctamente, sino que también sean intuitivas y significativas para quienes las usan.
+            </p>
+    </section>
 
-    <div class="container3">
-        <ul class="list">
-            <li class="project-item">
-                <div class="container-img">
-                    <img src="images/guess-the-number.png" alt="">
+    <div class="divider"></div>
+
+    <section id="experience">
+        <div class="section-header reveal">
+            <div class="section-label">Trayectoria</div>
+            <h2 class="section-title">Experiencia</h2>
+        </div>
+
+        <div class="exp-item reveal">
+            <div class="exp-date">
+                Jul 2025 — Dic 2025
+                <span>6 meses</span>
+            </div>
+            <div>
+                <div class="exp-company">Cencosud · Amaris Consulting</div>
+                <div class="exp-role">QA Analyst & Product Analyst</div>
+                <p class="exp-desc">Contribuí a la mejora de calidad y experiencia de usuario de una aplicación móvil en
+                    un entorno corporativo real. Desarrollé un scraper de reviews en Python e integré la API de OpenAI
+                    para análisis automático de comentarios y detección de patrones. Analicé feedback de usuarios y
+                    definí KPIs de calidad, transformando datos cualitativos en métricas accionables.</p>
+                <div class="exp-tags">
+                    <span class="exp-tag">Python</span>
+                    <span class="exp-tag">OpenAI API</span>
+                    <span class="exp-tag">API Testing</span>
+                    <span class="exp-tag">Postman</span>
+                    <span class="exp-tag">Jira</span>
+                    <span class="exp-tag">Google Sheets</span>
+                    <span class="exp-tag">QA Manual</span>
+                    <span class="exp-tag">KPIs</span>
                 </div>
-                <div class="project-title">GUESS THE NUMBER</div>
-                <div class="description-project">Desarrollado con <strong>python</strong>, este juego demuestra cómo implementar lógica
-                    interactiva y validación en tiempo real.
-                    Una experiencia divertida para los amantes de los números.</div>
-                <div class="view-project"><a href="https://github.com/estefanymoramellado/DEV015-guess-the-number">VER PROYECTO</a></div>
-            </li>
-            <li class="project-item">
-                <div class="container-img">
-                    <img src="images/fleet-manager-api.png" alt="">
+            </div>
+            <div class="exp-hover-line"></div>
+        </div>
+
+        <div class="exp-item reveal">
+            <div class="exp-date">
+                2024
+                <span>6 meses</span>
+            </div>
+            <div>
+                <div class="exp-company">Laboratoria · Bootcamp</div>
+                <div class="exp-role">Desarrolladora Web Full Stack</div>
+                <p class="exp-desc">Formación intensiva en desarrollo web con enfoque en proyectos reales. Construí
+                    aplicaciones con JavaScript, Python, APIs REST y bases de datos. Trabajo en equipo bajo metodologías
+                    ágiles.</p>
+                <div class="exp-tags">
+                    <span class="exp-tag">JavaScript</span>
+                    <span class="exp-tag">Python</span>
+                    <span class="exp-tag">HTML/CSS</span>
+                    <span class="exp-tag">Node.js</span>
+                    <span class="exp-tag">APIs REST</span>
+                    <span class="exp-tag">Agile</span>
                 </div>
-                <div class="project-title">FLEET MANAGER API</div>
-                <div class="description-project">Desarrollado con <strong>python</strong>, es una herramienta para gestionar y monitorear flotas de vehículos,
-                    ofreciendo seguimiento en tiempo real, gestión de mantenimiento y análisis de rendimiento, ideal
-                    para optimizar la logística y la eficiencia operativa.</div>
-                <div class="view-project"><a href="https://github.com/estefanymoramellado/DEV015-fleet-management-api">VER PROYECTO</a></div>
-            </li>
-            <li class="project-item">
-                <div class="container-img">
-                    <img src="images/dataverse-chat.png" alt="">
+            </div>
+            <div class="exp-hover-line"></div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="projects">
+        <div class="section-header reveal">
+            <div class="section-label">Trabajo</div>
+            <h2 class="section-title">Proyectos</h2>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card reveal">
+                <div class="project-num">05</div>
+                <img src="images/test-case.png" alt="Test Cases" class="project-img">
+                <div class="project-name">Test Cases</div>
+                <p class="project-desc">Documentación de casos de prueba manuales para una aplicación web de análisis de
+                    texto. Se validaron funcionalidades como conteo de palabras, conteo de caracteres, validación de
+                    entradas y manejo de caracteres especiales utilizando Notion para la documentación y Chrome DevTools
+                    durante la ejecución de pruebas.</p>
+                <a href="https://www.notion.so/3201582931ce8059882cf7056a4e1da1?v=3201582931ce807bab0d000caf2a38ac"
+                    target="_blank" class="project-link">Ver proyecto →</a>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-num">04</div>
+                <img src="images/analyzer.png" alt="Analizador de Texto" class="project-img">
+                <div class="project-name">Analizador de Texto</div>
+                <p class="project-desc">Aplicación web que analiza textos en tiempo real: palabras, legibilidad, idioma
+                    y más. Integra IA local con Ollama para mejorar la redacción antes de analizar.</p>
+                <a href="https://dev-015-text-analyzer.vercel.app/" target="_blank" class="project-link">Ver proyecto
+                    →</a>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-num">03</div>
+                <img src="images/guess-the-number.png" alt="Guess the Number" class="project-img">
+                <div class="project-name">Guess The Number</div>
+                <p class="project-desc">Desarrollado con Python, demuestra lógica interactiva y validación en tiempo
+                    real. Una experiencia divertida para los amantes de los números.</p>
+                <a href="https://github.com/estefanymoramellado/DEV015-guess-the-number" target="_blank"
+                    class="project-link">Ver proyecto →</a>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-num">02</div>
+                <img src="images/fleet-manager-api.png" alt="Fleet Manager API" class="project-img">
+                <div class="project-name">Fleet Manager API</div>
+                <p class="project-desc">Herramienta para gestionar y monitorear flotas de vehículos, con seguimiento en
+                    tiempo real, gestión de mantenimiento y análisis de rendimiento.</p>
+                <a href="https://github.com/estefanymoramellado/DEV015-fleet-management-api" target="_blank"
+                    class="project-link">Ver proyecto →</a>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-num">01</div>
+                <img src="images/dataverse-chat.png" alt="Dataverse Chat" class="project-img">
+                <div class="project-name">Dataverse Chat</div>
+                <p class="project-desc">SPA con sistema de chat integrado usando la API de OpenAI para interactuar con
+                    datos de personajes históricos con respuestas personalizadas.</p>
+                <a href="https://github.com/estefanymoramellado/DEV015-dataverse-chat" target="_blank"
+                    class="project-link">Ver proyecto →</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="skills">
+        <div class="section-header reveal">
+            <div class="section-label">Herramientas</div>
+            <h2 class="section-title">Skills</h2>
+        </div>
+
+        <div class="skills-container">
+            <div class="reveal">
+                <div class="skills-col-title">Desarrollo & Código</div>
+                <div class="skill-row"><span class="skill-name">HTML - CSS</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.9"></div>
+                    </div>
                 </div>
-                <div class="project-title">DATAVERSE CHAT</div>
-                <div class="description-project">Una aplicación de mensajería integrada en una SPA, que permite interactuar en tiempo real sobre datos de personajes históricos, con un sistema de chat basado en la API de OpenAI para ofrecer respuestas personalizadas.</div>
-                <div class="view-project"><a href="https://github.com/estefanymoramellado/DEV015-dataverse-chat">VER PROYECTO</a></div>
-            </li>
+                <div class="skill-row"><span class="skill-name">JavaScript</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.8"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">Python</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.85"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">Node.js</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.7"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">SQL - PgAdmin</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.65"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">REST APIs</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.65"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">OpenAI API</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.7"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="skills-col-title">QA & Testing</div>
+                <div class="skill-row"><span class="skill-name">Testing Manual</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.85"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">Functional testing</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.75"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">Bug Reporting & Bug Tracking</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.75"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">Test Case Design</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.85"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">API Testing - Postman</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.8"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">Mobile App Testing - Flutter</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.8"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">Network Debugging</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.8"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="skills-col-title">UX & Producto</div>
+                <div class="skill-row"><span class="skill-name">UX Research</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.9"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">Usability Testing</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.8"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">Wireframing</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.85"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">Prototyping</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.7"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="skills-col-title">Data & Cloud</div>
+                <div class="skill-row"><span class="skill-name">Power BI</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.9"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">Excel</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.8"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">Google Sheets</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.85"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">AWS Basics</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.85"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="skills-col-title">Tools & Herramientas</div>
+                <div class="skill-row"><span class="skill-name">Jira</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.9"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">Confluence</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.65"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">Notion</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.8"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">Postman</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.85"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="skills-col-titlex"></div>
+                <div class="skill-row"><span class="skill-name">GitHub</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.85"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">Chrome DevTools</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.85"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span class="skill-name">Figma</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" data-width="0.65"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="divider"></div>
+
+    <section id="contact">
+        <div class="glow-purple" style="bottom: 10%; left: 20%;"></div>
+        <p class="contact-big">Hablemos</p>
+        <div class="reveal.mail">
+            <a href="mailto:estefanymora.dev@gmail.com" class="contact-email">estefanymora.dev@gmail.com</a>
+        </div>
+        <ul class="contact-socials reveal">
+            <li><a href="https://www.linkedin.com/in/estefany-mora-mellado-1237b8261" target="_blank"><i
+                        class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/estefanymoramellado" target="_blank"><i class="fab fa-github"></i>
+                    GitHub</a></li>
         </ul>
-    </div>
-    <div class="container4">
-        <p class="titule-skills">SKILLS, herramientas y tecnologías que uso:</p>
-        <ul class="skills-list">
-            <li class="skill-item">
-                <img src="images/html.png" alt="HTML">
-                <p class="subtitule-skill">HTML</p>
-            </li>
-            <li class="skill-item">
-                <img src="images/css.png" alt="CSS">
-                <p class="subtitule-skill">CSS</p>
-            </li>
-            <li class="skill-item">
-                <img src="images/java-script.png" alt="JavaScript">
-                <p class="subtitule-skill">JavaScript</p>
-            </li>
-            <li class="skill-item">
-                <img src="images/python.png" alt="Python">
-                <p class="subtitule-skill">Python</p>
-            </li>
-            <li class="skill-item">
-                <img src="images/figma.png" alt="Figma">
-                <p class="subtitule-skill">Figma</p>
-            </li>
-            <li class="skill-item">
-                <img src="images/visual-code.png" alt="Visual Studio Code">
-                <p class="subtitule-skill">VS Code</p>
-            </li>
-            <li class="skill-item">
-                <img src="images/node-js.png" alt="Node.js">
-                <p class="subtitule-skill">Node.js</p>
-            </li>
-            <li class="skill-item">
-                <img src="images/pg-admin.png" alt="PgAdmin">
-                <p class="subtitule-skill">PgAdmin</p>
-            </li>
-            <li class="skill-item">
-                <img src="images/postman.png" alt="Postman">
-                <p class="subtitule-skill">Postman</p>
-            </li>
-            <li class="skill-item">
-                <img src="images/git.png" alt="Git">
-                <p class="subtitule-skill">Git</p>
-            </li>
-            <li class="skill-item">
-                <img src="images/command.png" alt="Command">
-                <p class="subtitule-skill">Command Line</p>
-            </li>
-            <li class="skill-item">
-                <img src="images/responsive-design.png" alt="Responsive Design">
-                <p class="subtitule-skill">Website Responsive</p>
-            </li>
-        </ul>
-    </div>
+    </section>
 
-
-    <footer>© 2024 Estefany Mora. Todos los derechos reservados.</footer>
+    <footer>
+        <p>© 2025 Estefany Mora Mellado</p>
+        <p>Developer · QA · Product</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
