@@ -334,10 +334,11 @@ section {
 
 .about-left {
     position: relative;
+    margin-top: -1.5em;
 }
 
 .about-right {
-    margin-top: 1.2em;
+    margin-top: 2.2em;
     margin-right: 4em;
 }
 
@@ -359,7 +360,7 @@ section {
 }
 
 .about-photo-placeholder {
-    width: 40%;
+    width: 80%;
     height: 40%;
     aspect-ratio: 4/4;
     border: 1px solid var(--border);
@@ -372,20 +373,6 @@ section {
     backdrop-filter: blur(10px);
     position: relative;
     overflow: hidden;
-}
-
-.about-photo-placeholder::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(201, 168, 76, 0.05));
-}
-
-.about-photo-placeholder i {
-    font-size: 48px;
-    color: var(--muted);
-    position: relative;
-    z-index: 1;
 }
 
 .about-photo-placeholder p {
