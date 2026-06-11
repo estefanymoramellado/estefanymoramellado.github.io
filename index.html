@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Estefany Mora Mellado">
-    <title>Estefany Mora — Developer · QA · Product</title>
+    <title>Estefany Mora — QA Analyst</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,400&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
             <li><a href="#contact">Contacto</a></li>
         </ul>
         <ul class="nav-social">
-            <li><a href="https://www.linkedin.com/in/estefany-mora-mellado-1237b8261" target="_blank"><i
+            <li><a href="https://www.linkedin.com/in/estefany-mora-dev" target="_blank"><i
                         class="fab fa-linkedin"></i></a></li>
             <li><a href="https://github.com/estefanymoramellado" target="_blank"><i class="fab fa-github"></i></a></li>
             <li><a href="mailto:estefanymora.dev@gmail.com"><i class="fas fa-envelope"></i></a></li>
@@ -44,12 +44,13 @@
     <section id="hero">
         <div class="glow-purple" style="top: 10%; left: -100px;"></div>
         <div class="glow-gold" style="bottom: 30%; right: 10%;"></div>
-        <p class="hero-tag">— Portafolio 2025</p>
+        <p class="hero-tag">— Portafolio 2026</p>
         <h1 class="hero-name">Estefany Mora</h1>
         <div class="hero-roles">
-            <span class="role-pill">Front-End Developer</span>
-            <span class="role-pill">QA Functional Tester</span>
-            <span class="role-pill">UX & Product Focus</span>
+            <span class="role-pill">QA Analyst</span>
+            <span class="role-pill">Testing Funcional & APIs</span>
+            <span class="role-pill">Automatización E2E (Cypress)</span>
+            <span class="role-pill">Base en Front-End</span>
         </div>
         <div class="hero-scroll">
             <div class="scroll-line"></div>
@@ -68,25 +69,18 @@
             </div>
         </div>
         <div class="about-right reveal">
-            <p>Soy Estefany, <span class="highlight">QA Functional Tester y developer</span> con una historia poco
-                convencional.
-                Antes de escribir mi primera línea de código, me formé como Terapeuta Natural, una experiencia que me
-                enseñó a observar cómo pequeños cambios pueden
-                <span class="highlight">transformar profundamente la experiencia de las personas.</span>
-            </p>
-            <br>
+            <p>Soy Estefany, <span class="highlight">QA Analyst</span>con experiencia validando flujos críticos de
+                aplicaciones móviles en producción en una empresa de retail (Cencosud).
+                Mi trabajo es encontrar lo que falla antes de que lo encuentre el usuario: combino testing manual y
+                funcional con análisis de APIs en Postman y automatización E2E con Cypress.
+                Mi base en desarrollo front-end (JavaScript, React, Python) me permite entender la lógica de las
+                interfaces y colaborar mejor con los equipos técnicos.
+                Me interesa especialmente la calidad de sistemas basados en IA, donde he desarrollado proyectos de
+                evaluación automática de modelos de lenguaje.
+                Llegué a la tecnología por un camino poco convencional —vengo de la fotografía y las terapias naturales—
+                y de ahí traigo lo que más me sirve hoy en QA:
+                atención al detalle y curiosidad por entender cómo funcionan los sistemas.</p>
 
-            <p>La <span class="highlight">fotografía</span> reforzó esa forma de mirar el mundo: atención al detalle,
-                sensibilidad estética y curiosidad por comprender
-                los sistemas que nos rodean. Hoy aplico esa mirada en la <span class="highlight">tecnología</span> para
-                construir productos que combinan lógica, creatividad y sensibilidad.</p>
-            <br>
-
-            <p>Actualmente me especializo en <span class="highlight">desarrollo web, testing y análisis de
-                    producto</span>, con foco en
-                <span class="highlight">front-end, Python, QA y APIs</span>, buscando crear herramientas que no solo
-                funcionen correctamente, sino que también sean intuitivas y significativas para quienes las usan.
-            </p>
     </section>
 
     <div class="divider"></div>
@@ -105,19 +99,18 @@
             <div>
                 <div class="exp-company">Cencosud · Amaris Consulting</div>
                 <div class="exp-role">QA Analyst & Product Analyst</div>
-                <p class="exp-desc">Contribuí a la mejora de calidad y experiencia de usuario de una aplicación móvil en
-                    un entorno corporativo real. Desarrollé un scraper de reviews en Python e integré la API de OpenAI
-                    para análisis automático de comentarios y detección de patrones. Analicé feedback de usuarios y
-                    definí KPIs de calidad, transformando datos cualitativos en métricas accionables.</p>
+                <p class="exp-desc">Validé flujos críticos de una aplicación móvil en producción mediante testing
+                    funcional y manual, documentando incidencias en Jira y analizando respuestas de APIs con Postman.
+                    Desarrollé además un scraper en Python integrado con la API de OpenAI para análisis automático de
+                    comentarios de usuarios y detección de patrones.</p>
                 <div class="exp-tags">
-                    <span class="exp-tag">Python</span>
-                    <span class="exp-tag">OpenAI API</span>
+                    <span class="exp-tag">Functional Testing</span>
+                    <span class="exp-tag">Manual Testing</span>
                     <span class="exp-tag">API Testing</span>
                     <span class="exp-tag">Postman</span>
                     <span class="exp-tag">Jira</span>
-                    <span class="exp-tag">Google Sheets</span>
-                    <span class="exp-tag">QA Manual</span>
-                    <span class="exp-tag">KPIs</span>
+                    <span class="exp-tag">Python</span>
+                    <span class="exp-tag">OpenAI API</span>
                 </div>
             </div>
             <div class="exp-hover-line"></div>
@@ -156,6 +149,50 @@
         </div>
 
         <div class="projects-grid">
+
+            <div class="project-card reveal">
+                <div class="project-num">06</div>
+                <img src="images/test-case.png" alt="Test Cases" class="project-img">
+                <div class="project-name">LLM Quality Harness </div>
+                <p class="project-desc">API REST en Python/FastAPI que evalúa automáticamente la calidad de respuestas
+                    de modelos de lenguaje (LLM-as-a-Judge), con detección de respuestas vacías o en idioma incorrecto,
+                    observabilidad en Langfuse y CI/CD con GitHub Actions. Mi exploración del cruce entre QA e IA.</p>
+                <a href="https://github.com/estefanymoramellado/llm-quality-harness" target="_blank"
+                    class="project-link">Ver proyecto →</a>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-num">04</div>
+                <img src="images/analyzer.png" alt="Analizador de Texto" class="project-img">
+                <div class="project-name">Analizador de Texto</div>
+                <p class="project-desc">App de análisis de texto en tiempo real con suite de automatización E2E en
+                    Cypress (11+ casos): flujos de usuario, validación de métricas, mocking de API con cy.intercept y
+                    manejo de errores (éxito, error 500, caída de red). Integra IA local con Ollama.</p>
+                <a href="https://dev-015-text-analyzer.vercel.app/" target="_blank" class="project-link">Ver
+                    proyecto→</a>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-num">05</div>
+                <img src="images/test-case.png" alt="Test Cases" class="project-img">
+                <div class="project-name">Auditoría de Calidad Digital</div>
+                <p class="project-desc">Auditoría integral de calidad sobre una plataforma web: 12 hallazgos priorizados
+                    por impacto y frecuencia, con pasos de reproducción y recomendación técnica. Incluyó análisis de
+                    performance con Lighthouse (Core Web Vitals), detección de riesgos de seguridad y evaluación de
+                    accesibilidad con heurísticas de Nielsen.</p>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-num">02</div>
+                <img src="images/fleet-manager-api.png" alt="Fleet Manager API" class="project-img">
+                <div class="project-name">Fleet Manager API</div>
+                <p class="project-desc">API RESTful en Python con arquitectura MVC, validaciones robustas y pruebas
+                    unitarias con 90% de cobertura. Documentación completa de endpoints en Postman.</p>
+                <a href="https://github.com/estefanymoramellado/DEV015-fleet-management-api" target="_blank"
+                    class="project-link">Ver proyecto →</a>
+            </div>
+
+
             <div class="project-card reveal">
                 <div class="project-num">05</div>
                 <img src="images/test-case.png" alt="Test Cases" class="project-img">
@@ -167,15 +204,7 @@
                 <a href="https://www.notion.so/3201582931ce8059882cf7056a4e1da1?v=3201582931ce807bab0d000caf2a38ac"
                     target="_blank" class="project-link">Ver proyecto →</a>
             </div>
-            <div class="project-card reveal">
-                <div class="project-num">04</div>
-                <img src="images/analyzer.png" alt="Analizador de Texto" class="project-img">
-                <div class="project-name">Analizador de Texto</div>
-                <p class="project-desc">Aplicación web que analiza textos en tiempo real: palabras, legibilidad, idioma
-                    y más. Integra IA local con Ollama para mejorar la redacción antes de analizar.</p>
-                <a href="https://dev-015-text-analyzer.vercel.app/" target="_blank" class="project-link">Ver proyecto
-                    →</a>
-            </div>
+
             <div class="project-card reveal">
                 <div class="project-num">03</div>
                 <img src="images/guess-the-number.png" alt="Guess the Number" class="project-img">
@@ -185,15 +214,7 @@
                 <a href="https://github.com/estefanymoramellado/DEV015-guess-the-number" target="_blank"
                     class="project-link">Ver proyecto →</a>
             </div>
-            <div class="project-card reveal">
-                <div class="project-num">02</div>
-                <img src="images/fleet-manager-api.png" alt="Fleet Manager API" class="project-img">
-                <div class="project-name">Fleet Manager API</div>
-                <p class="project-desc">Herramienta para gestionar y monitorear flotas de vehículos, con seguimiento en
-                    tiempo real, gestión de mantenimiento y análisis de rendimiento.</p>
-                <a href="https://github.com/estefanymoramellado/DEV015-fleet-management-api" target="_blank"
-                    class="project-link">Ver proyecto →</a>
-            </div>
+
             <div class="project-card reveal">
                 <div class="project-num">01</div>
                 <img src="images/dataverse-chat.png" alt="Dataverse Chat" class="project-img">
@@ -305,16 +326,6 @@
                         <div class="skill-bar" data-width="0.8"></div>
                     </div>
                 </div>
-                <div class="skill-row"><span class="skill-name">Wireframing</span>
-                    <div class="skill-bar-wrap">
-                        <div class="skill-bar" data-width="0.85"></div>
-                    </div>
-                </div>
-                <div class="skill-row"><span class="skill-name">Prototyping</span>
-                    <div class="skill-bar-wrap">
-                        <div class="skill-bar" data-width="0.7"></div>
-                    </div>
-                </div>
             </div>
 
             <div class="reveal">
@@ -396,7 +407,7 @@
             <a href="mailto:estefanymora.dev@gmail.com" class="contact-email">estefanymora.dev@gmail.com</a>
         </div>
         <ul class="contact-socials reveal">
-            <li><a href="https://www.linkedin.com/in/estefany-mora-mellado-1237b8261" target="_blank"><i
+            <li><a href="https://www.linkedin.com/in/estefany-mora-dev" target="_blank"><i
                         class="fab fa-linkedin"></i> LinkedIn</a></li>
             <li><a href="https://github.com/estefanymoramellado" target="_blank"><i class="fab fa-github"></i>
                     GitHub</a></li>
@@ -405,7 +416,7 @@
 
     <footer>
         <p>© 2025 Estefany Mora Mellado</p>
-        <p>Developer · QA · Product</p>
+        <p>QA Analyst · Testing Funcional & APIs · Automatización E2E</p>
     </footer>
 
     <script src="script.js"></script>
