@@ -362,27 +362,14 @@ section {
 .about-photo-placeholder {
     width: 80%;
     height: 40%;
-    aspect-ratio: 4/4;
-    border: 1px solid var(--border);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 16px;
-    background: var(--card);
-    backdrop-filter: blur(10px);
-    position: relative;
-    overflow: hidden;
+    object-fit: cover;
+    object-position: top;     
+    margin-bottom: 24px;
+    filter: grayscale(30%) brightness(0.8);
+    transition: filter 0.4s;
 }
 
-.about-photo-placeholder p {
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    color: var(--muted);
-    text-transform: uppercase;
-    position: relative;
-    z-index: 1;
-}
+
 
 .tell {
     font-family: 'Bebas Neue', sans-serif;
